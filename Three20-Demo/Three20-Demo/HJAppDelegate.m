@@ -7,8 +7,11 @@
 //
 
 #import "HJAppDelegate.h"
-#import "TDGroupedTableViewController.h"
+#import "TDDefaultStyleSheet.h"
 
+#import "TDGroupedTableViewController.h"
+#import "TDDemoListViewController.h"
+#import "TDNewsListViewController.h"
 
 @implementation HJAppDelegate
 
@@ -27,6 +30,8 @@
 
 - (void)three20Lanuch
 {
+    TDDefaultStyleSheet *style = [[TDDefaultStyleSheet alloc]init];
+    [TTStyleSheet setGlobalStyleSheet:style];
     TTNavigator* navigator = [TTNavigator navigator];
     navigator.supportsShakeToReload = YES;
     navigator.persistenceMode = TTNavigatorPersistenceModeAll;
@@ -37,12 +42,13 @@
     // Any URL that doesn't match will fall back on this one, and open in the web browser
     [map from:@"*" toViewController:[TTWebController class]];
     
+    [map from:@"tt://demolist" toSharedViewController:[TDDemoListViewController class]];
+    [map from:@"tt://grouped-table" toSharedViewController:[TDGroupedTableViewController class]];
+    [map from:@"tt://html-parser" toSharedViewController:[TDNewsListViewController class]];
 
-    [map from:@"tt://groupedtable" toSharedViewController:[TDGroupedTableViewController class]];
-    
-     if (![navigator restoreViewControllers])
+    if (![navigator restoreViewControllers])
      {
-     [navigator openURLAction:[TTURLAction actionWithURLPath:@"tt://groupedtable"]];
+     [navigator openURLAction:[TTURLAction actionWithURLPath:@"tt://demolist"]];
      
      }
 

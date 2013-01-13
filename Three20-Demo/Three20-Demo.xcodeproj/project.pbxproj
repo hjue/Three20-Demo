@@ -20,15 +20,25 @@
 		74C777F516A00731009A1FA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74C777F416A00731009A1FA6 /* Foundation.framework */; };
 		74C777F716A00731009A1FA6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74C777F616A00731009A1FA6 /* CoreGraphics.framework */; };
 		74C777FD16A00731009A1FA6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 74C777FB16A00731009A1FA6 /* InfoPlist.strings */; };
-		74C777FF16A00731009A1FA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C777FE16A00731009A1FA6 /* main.m */; };
-		74C7780316A00731009A1FA6 /* HJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C7780216A00731009A1FA6 /* HJAppDelegate.m */; };
+		74C777FF16A00731009A1FA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C777FE16A00731009A1FA6 /* main.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		74C7780316A00731009A1FA6 /* HJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C7780216A00731009A1FA6 /* HJAppDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		74C7780516A00731009A1FA6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 74C7780416A00731009A1FA6 /* Default.png */; };
 		74C7780716A00731009A1FA6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74C7780616A00731009A1FA6 /* Default@2x.png */; };
 		74C7780916A00731009A1FA6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74C7780816A00731009A1FA6 /* Default-568h@2x.png */; };
-		74C7783316A00A30009A1FA6 /* TDGroupedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C7783216A00A30009A1FA6 /* TDGroupedTableViewController.m */; };
+		74C7783316A00A30009A1FA6 /* TDGroupedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C7783216A00A30009A1FA6 /* TDGroupedTableViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		74C7783516A012FB009A1FA6 /* demo_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 74C7783416A012FB009A1FA6 /* demo_57.png */; };
 		74C7783716A01303009A1FA6 /* demo_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 74C7783616A01303009A1FA6 /* demo_114.png */; };
 		74C7783916A01A2C009A1FA6 /* photoDefault.png in Resources */ = {isa = PBXBuildFile; fileRef = 74C7783816A01A2C009A1FA6 /* photoDefault.png */; };
+		74E6EBFC16A2A2FF00CADDBB /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E6EBFB16A2A2FF00CADDBB /* libxml2.2.dylib */; };
+		74E6EC1C16A2A4F300CADDBB /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E6EC1616A2A4F300CADDBB /* XPathQuery.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		74E6EC1D16A2A4F300CADDBB /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E6EC1916A2A4F300CADDBB /* TFHpple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		74E6EC1E16A2A4F300CADDBB /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E6EC1B16A2A4F300CADDBB /* TFHppleElement.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		74E6EC2216A2AAE000CADDBB /* TDDemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E6EC2116A2AAE000CADDBB /* TDDemoListViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		74E6EC2516A2AE5300CADDBB /* TDNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E6EC2416A2AE5300CADDBB /* TDNewsModel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		74E6EC2816A2AF2700CADDBB /* TDNewsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E6EC2716A2AF2700CADDBB /* TDNewsListViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		74E6EC2C16A2DE7300CADDBB /* ISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E6EC2B16A2DE7300CADDBB /* ISO8601DateFormatter.m */; };
+		74E6EC6816A2E52B00CADDBB /* TDUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E6EC6716A2E52B00CADDBB /* TDUtility.m */; };
+		74E6EC6B16A2ED0300CADDBB /* TDDefaultStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E6EC6A16A2ED0300CADDBB /* TDDefaultStyleSheet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -206,9 +216,28 @@
 		74C7780816A00731009A1FA6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		74C7783116A00A30009A1FA6 /* TDGroupedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDGroupedTableViewController.h; sourceTree = "<group>"; };
 		74C7783216A00A30009A1FA6 /* TDGroupedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDGroupedTableViewController.m; sourceTree = "<group>"; };
-		74C7783416A012FB009A1FA6 /* demo_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demo_57.png; sourceTree = "<group>"; };
-		74C7783616A01303009A1FA6 /* demo_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demo_114.png; sourceTree = "<group>"; };
+		74C7783416A012FB009A1FA6 /* demo_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = demo_57.png; path = ../demo_57.png; sourceTree = "<group>"; };
+		74C7783616A01303009A1FA6 /* demo_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = demo_114.png; path = ../demo_114.png; sourceTree = "<group>"; };
 		74C7783816A01A2C009A1FA6 /* photoDefault.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photoDefault.png; sourceTree = "<group>"; };
+		74E6EBFB16A2A2FF00CADDBB /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		74E6EC1616A2A4F300CADDBB /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		74E6EC1716A2A4F300CADDBB /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		74E6EC1816A2A4F300CADDBB /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		74E6EC1916A2A4F300CADDBB /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		74E6EC1A16A2A4F300CADDBB /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		74E6EC1B16A2A4F300CADDBB /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		74E6EC2016A2AAE000CADDBB /* TDDemoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDDemoListViewController.h; sourceTree = "<group>"; };
+		74E6EC2116A2AAE000CADDBB /* TDDemoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDDemoListViewController.m; sourceTree = "<group>"; };
+		74E6EC2316A2AE5300CADDBB /* TDNewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDNewsModel.h; sourceTree = "<group>"; };
+		74E6EC2416A2AE5300CADDBB /* TDNewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDNewsModel.m; sourceTree = "<group>"; };
+		74E6EC2616A2AF2700CADDBB /* TDNewsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDNewsListViewController.h; sourceTree = "<group>"; };
+		74E6EC2716A2AF2700CADDBB /* TDNewsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDNewsListViewController.m; sourceTree = "<group>"; };
+		74E6EC2A16A2DE7300CADDBB /* ISO8601DateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISO8601DateFormatter.h; sourceTree = "<group>"; };
+		74E6EC2B16A2DE7300CADDBB /* ISO8601DateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISO8601DateFormatter.m; sourceTree = "<group>"; };
+		74E6EC6616A2E52B00CADDBB /* TDUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDUtility.h; sourceTree = "<group>"; };
+		74E6EC6716A2E52B00CADDBB /* TDUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDUtility.m; sourceTree = "<group>"; };
+		74E6EC6916A2ED0300CADDBB /* TDDefaultStyleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDDefaultStyleSheet.h; sourceTree = "<group>"; };
+		74E6EC6A16A2ED0300CADDBB /* TDDefaultStyleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDDefaultStyleSheet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +245,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74E6EBFC16A2A2FF00CADDBB /* libxml2.2.dylib in Frameworks */,
 				3201088596B4756681693705 /* libThree20UICommon.a in Frameworks */,
 				320D7DCCE32703ACAB9A45E5 /* libThree20.a in Frameworks */,
 				320A737074758E53BA54BE95 /* libThree20UINavigator.a in Frameworks */,
@@ -299,8 +329,6 @@
 		74C777E316A00731009A1FA6 = {
 			isa = PBXGroup;
 			children = (
-				74C7783616A01303009A1FA6 /* demo_114.png */,
-				74C7783416A012FB009A1FA6 /* demo_57.png */,
 				74C777F816A00731009A1FA6 /* Three20-Demo */,
 				74C777F116A00731009A1FA6 /* Frameworks */,
 				74C777EF16A00731009A1FA6 /* Products */,
@@ -336,7 +364,11 @@
 		74C777F816A00731009A1FA6 /* Three20-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				74E6EC1F16A2AABA00CADDBB /* Demo List */,
+				74E6EBEF16A2889600CADDBB /* Parse HTML */,
 				74C7781A16A00974009A1FA6 /* Grouped Table */,
+				74E6EC6916A2ED0300CADDBB /* TDDefaultStyleSheet.h */,
+				74E6EC6A16A2ED0300CADDBB /* TDDefaultStyleSheet.m */,
 				74C7780116A00731009A1FA6 /* HJAppDelegate.h */,
 				74C7780216A00731009A1FA6 /* HJAppDelegate.m */,
 				74C777F916A00731009A1FA6 /* Supporting Files */,
@@ -348,6 +380,9 @@
 			isa = PBXGroup;
 			children = (
 				74C7783816A01A2C009A1FA6 /* photoDefault.png */,
+				74E6EBFB16A2A2FF00CADDBB /* libxml2.2.dylib */,
+				74C7783616A01303009A1FA6 /* demo_114.png */,
+				74C7783416A012FB009A1FA6 /* demo_57.png */,
 				320B6C86F11D9990244A9730 /* Three20.bundle */,
 				74C777FA16A00731009A1FA6 /* Three20-Demo-Info.plist */,
 				74C777FB16A00731009A1FA6 /* InfoPlist.strings */,
@@ -367,6 +402,60 @@
 				74C7783216A00A30009A1FA6 /* TDGroupedTableViewController.m */,
 			);
 			name = "Grouped Table";
+			sourceTree = "<group>";
+		};
+		74E6EBEF16A2889600CADDBB /* Parse HTML */ = {
+			isa = PBXGroup;
+			children = (
+				74E6EC2916A2DE5200CADDBB /* DateFormatter */,
+				74E6EC1516A2A4DC00CADDBB /* Hpple */,
+				74E6EBF016A288CE00CADDBB /* Model */,
+				74E6EC2616A2AF2700CADDBB /* TDNewsListViewController.h */,
+				74E6EC2716A2AF2700CADDBB /* TDNewsListViewController.m */,
+				74E6EC6616A2E52B00CADDBB /* TDUtility.h */,
+				74E6EC6716A2E52B00CADDBB /* TDUtility.m */,
+			);
+			name = "Parse HTML";
+			sourceTree = "<group>";
+		};
+		74E6EBF016A288CE00CADDBB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				74E6EC2316A2AE5300CADDBB /* TDNewsModel.h */,
+				74E6EC2416A2AE5300CADDBB /* TDNewsModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		74E6EC1516A2A4DC00CADDBB /* Hpple */ = {
+			isa = PBXGroup;
+			children = (
+				74E6EC1616A2A4F300CADDBB /* XPathQuery.m */,
+				74E6EC1716A2A4F300CADDBB /* XPathQuery.h */,
+				74E6EC1816A2A4F300CADDBB /* TFHpple.h */,
+				74E6EC1916A2A4F300CADDBB /* TFHpple.m */,
+				74E6EC1A16A2A4F300CADDBB /* TFHppleElement.h */,
+				74E6EC1B16A2A4F300CADDBB /* TFHppleElement.m */,
+			);
+			name = Hpple;
+			sourceTree = "<group>";
+		};
+		74E6EC1F16A2AABA00CADDBB /* Demo List */ = {
+			isa = PBXGroup;
+			children = (
+				74E6EC2016A2AAE000CADDBB /* TDDemoListViewController.h */,
+				74E6EC2116A2AAE000CADDBB /* TDDemoListViewController.m */,
+			);
+			name = "Demo List";
+			sourceTree = "<group>";
+		};
+		74E6EC2916A2DE5200CADDBB /* DateFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				74E6EC2A16A2DE7300CADDBB /* ISO8601DateFormatter.h */,
+				74E6EC2B16A2DE7300CADDBB /* ISO8601DateFormatter.m */,
+			);
+			name = DateFormatter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -580,6 +669,15 @@
 				74C777FF16A00731009A1FA6 /* main.m in Sources */,
 				74C7780316A00731009A1FA6 /* HJAppDelegate.m in Sources */,
 				74C7783316A00A30009A1FA6 /* TDGroupedTableViewController.m in Sources */,
+				74E6EC1C16A2A4F300CADDBB /* XPathQuery.m in Sources */,
+				74E6EC1D16A2A4F300CADDBB /* TFHpple.m in Sources */,
+				74E6EC1E16A2A4F300CADDBB /* TFHppleElement.m in Sources */,
+				74E6EC2216A2AAE000CADDBB /* TDDemoListViewController.m in Sources */,
+				74E6EC2516A2AE5300CADDBB /* TDNewsModel.m in Sources */,
+				74E6EC2816A2AF2700CADDBB /* TDNewsListViewController.m in Sources */,
+				74E6EC2C16A2DE7300CADDBB /* ISO8601DateFormatter.m in Sources */,
+				74E6EC6816A2E52B00CADDBB /* TDUtility.m in Sources */,
+				74E6EC6B16A2ED0300CADDBB /* TDDefaultStyleSheet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -700,8 +798,15 @@
 		74C7780D16A00731009A1FA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Three20-Demo/Three20-Demo-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(BUILT_PRODUCTS_DIR)/../three20",
+					"$(BUILT_PRODUCTS_DIR)/../../three20",
+					../../../iphone/Library/three20/Build/Products/three20,
+					"$(SDK_ROOT)/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = "Three20-Demo/Three20-Demo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -712,8 +817,15 @@
 		74C7780E16A00731009A1FA6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Three20-Demo/Three20-Demo-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(BUILT_PRODUCTS_DIR)/../three20",
+					"$(BUILT_PRODUCTS_DIR)/../../three20",
+					../../../iphone/Library/three20/Build/Products/three20,
+					"$(SDK_ROOT)/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = "Three20-Demo/Three20-Demo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
