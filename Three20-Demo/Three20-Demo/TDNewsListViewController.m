@@ -78,4 +78,35 @@
     [self loadNews:@"http://news.csdn.net/"];
     [[self tableView]scrollToRowAtIndexPath:[NSIndexPath indexPathForItem:max inSection:indexPath.section] atScrollPosition:UITableViewScrollPositionBottom animated:YES];
 }
+
+- (void) regexExample
+{
+    NSString *html = [NSString stringWithContentsOfURL:[NSURL URLWithString:@"http://news.csdn.net/"] encoding:NSUTF8StringEncoding error:nil];
+    NSError *error = nil;
+    NSString *pattern = @"class=\"unit\"(.*?)</div>";
+
+    NSLog(@"pattern:%@",pattern);
+    NSRegularExpression *reg = [NSRegularExpression regularExpressionWithPattern:pattern options:NSRegularExpressionCaseInsensitive|NSRegularExpressionDotMatchesLineSeparators error:&error];
+    NSArray *matches = [reg matchesInString:html options:0 range:NSMakeRange(0, [html length])];
+    for (NSTextCheckingResult *match in matches) {
+        NSString *unit = [html substringWithRange:[match rangeAtIndex:1]];
+//        unit = @"<span class=\"ago\">16秒前</span>";
+        NSRegularExpression *regTime = [NSRegularExpression regularExpressionWithPattern:@"<span\\s+class=\"ago\">\\s*(\\d+)(小时|分钟|天|秒)前\\s*</span>" options:NSRegularExpressionCaseInsensitive error:&error];
+        /*
+         NSRange rangeOfMatch = [regTime rangeOfFirstMatchInString:unit options:0 range:NSMakeRange(0,[unit length])];
+         if (!NSEqualRanges(rangeOfMatch, NSMakeRange(NSNotFound, 0)))
+         {
+         NSString *date = [unit substringWithRange:rangeOfMatch];
+         NSLog(@"Date:%@",date);
+         }
+         */
+        NSTextCheckingResult *matchDate = [regTime firstMatchInString:unit options:0 range:NSMakeRange(0, [unit length])];
+        if (matchDate) {
+            NSLog(@"Date:%@,%@",[unit substringWithRange:[matchDate rangeAtIndex:1]],[unit substringWithRange:[matchDate rangeAtIndex:2]]);
+            
+        }
+        
+    }
+    
+}
 @end
