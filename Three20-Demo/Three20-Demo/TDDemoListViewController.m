@@ -23,7 +23,8 @@
         self.tableViewStyle = UITableViewStylePlain;
         self.dataSource = [TTListDataSource dataSourceWithObjects:
                            [TTTableLink itemWithText:@"Parse HTML" URL:@"tt://html-parser"],
-                           [TTTableLink itemWithText:@"Grouped Table" URL:@"tt://grouped-table"],                            
+                           [TTTableLink itemWithText:@"Grouped Table" URL:@"tt://grouped-table"],
+                           [TTTableLink itemWithText:@"WebView" URL:@"tt://webview"],                                                       
                             nil];
     }
     return self;

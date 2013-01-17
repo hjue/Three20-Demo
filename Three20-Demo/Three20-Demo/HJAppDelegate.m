@@ -12,6 +12,7 @@
 #import "TDGroupedTableViewController.h"
 #import "TDDemoListViewController.h"
 #import "TDNewsListViewController.h"
+#import "TDWebViewController.h"
 
 @implementation HJAppDelegate
 
@@ -45,6 +46,7 @@
     [map from:@"tt://demolist" toSharedViewController:[TDDemoListViewController class]];
     [map from:@"tt://grouped-table" toSharedViewController:[TDGroupedTableViewController class]];
     [map from:@"tt://html-parser" toSharedViewController:[TDNewsListViewController class]];
+    [map from:@"tt://webview" toSharedViewController:[TDWebViewController class]];
 
     if (![navigator restoreViewControllers])
      {
