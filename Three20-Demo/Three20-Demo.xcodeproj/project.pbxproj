@@ -50,6 +50,7 @@
 		74E6EC2C16A2DE7300CADDBB /* ISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E6EC2B16A2DE7300CADDBB /* ISO8601DateFormatter.m */; };
 		74E6EC6816A2E52B00CADDBB /* TDUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E6EC6716A2E52B00CADDBB /* TDUtility.m */; };
 		74E6EC6B16A2ED0300CADDBB /* TDDefaultStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E6EC6A16A2ED0300CADDBB /* TDDefaultStyleSheet.m */; };
+		74EFF43816ABE8C50032D022 /* TDBHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EFF43716ABE8C50032D022 /* TDBHTTPClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -271,6 +272,8 @@
 		74E6EC6716A2E52B00CADDBB /* TDUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDUtility.m; sourceTree = "<group>"; };
 		74E6EC6916A2ED0300CADDBB /* TDDefaultStyleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDDefaultStyleSheet.h; sourceTree = "<group>"; };
 		74E6EC6A16A2ED0300CADDBB /* TDDefaultStyleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDDefaultStyleSheet.m; sourceTree = "<group>"; };
+		74EFF43616ABE8C50032D022 /* TDBHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDBHTTPClient.h; sourceTree = "<group>"; };
+		74EFF43716ABE8C50032D022 /* TDBHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDBHTTPClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -433,6 +436,7 @@
 		74C777F816A00731009A1FA6 /* Three20-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				74EFF43516ABE8790032D022 /* Networking */,
 				744BDBC516A531F700AB7401 /* WebView */,
 				74E6EC1F16A2AABA00CADDBB /* Demo List */,
 				74E6EBEF16A2889600CADDBB /* Parse HTML */,
@@ -527,6 +531,15 @@
 				74E6EC2B16A2DE7300CADDBB /* ISO8601DateFormatter.m */,
 			);
 			name = DateFormatter;
+			sourceTree = "<group>";
+		};
+		74EFF43516ABE8790032D022 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				74EFF43616ABE8C50032D022 /* TDBHTTPClient.h */,
+				74EFF43716ABE8C50032D022 /* TDBHTTPClient.m */,
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -760,6 +773,7 @@
 				749A66F716A66A1D00173721 /* AFURLConnectionOperation.m in Sources */,
 				749A66F816A66A1D00173721 /* AFXMLRequestOperation.m in Sources */,
 				749A66F916A66A1D00173721 /* UIImageView+AFNetworking.m in Sources */,
+				74EFF43816ABE8C50032D022 /* TDBHTTPClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

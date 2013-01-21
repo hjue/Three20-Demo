@@ -163,7 +163,7 @@
 - (NSString *) autoLoginCsdnJs
 {
     NSString *savedUsername = @"hjue";
-    NSString *savedPassword = @"systemcsdn";
+    NSString *savedPassword = @"";
     NSString *loadJs;
     if (savedUsername.length != 0 && savedPassword.length != 0) {
         //create js strings
@@ -182,7 +182,7 @@
 - (NSString *) autoLogin12306Js
 {
     NSString *savedUsername = @"haojue@gmail.com";
-    NSString *savedPassword = @"systemad";
+    NSString *savedPassword = @"";
     NSString *loadJs;
     if (savedUsername.length != 0 && savedPassword.length != 0) {
 
